@@ -29,7 +29,7 @@ tr_loader, va_loader, te_loader = load_Cityscapes_dataset(root_dir='./cityscapes
 
 dataset = va_loader.dataset
 
-df = pd.read_csv('./fod/masks/faulty_output_dataset.csv')
+df = pd.read_csv('./fod/faulty_output_dataset/faulty_output_dataset.csv')
 
 def update_mask(indice, flag=True):
     frame_id = df.iloc[indice]['Frame']
@@ -65,7 +65,7 @@ def save_image(indice, name=""):
     img, _ = dataset[frame_id]
     mask = faulty_model.get_mask(img.unsqueeze(0).to(device), filtered_faults[fault_id])
     mask = get_color_pallete(mask)
-    mask.save(f"./imgs_vids/tab_masks/{name}{indice}_fm_{frame_id}_{fault_id}.png")
+    mask.save(f"./imgs_vids/{name}{indice}_fm_{frame_id}_{fault_id}.png")
     print(f"Immagine {indice} salvata")
 
 def update_from_textbox(change):
