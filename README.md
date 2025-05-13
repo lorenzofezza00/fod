@@ -34,4 +34,4 @@ The dataset is available on [Google Drive](https://drive.google.com/file/d/18Ipn
 
 <a href="https://colab.research.google.com/github/lorenzofezza00/fod/blob/main/analyze_dataset.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-or Locally with [dataset_analysis.ipynb](./dataset_analysis.ipynb) notebook.
+You can test it locally with [dataset_analysis.ipynb](./dataset_analysis.ipynb) notebook, which explains how to properly use the dataset.
