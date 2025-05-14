@@ -2,7 +2,7 @@
 
 # Faulty Output Dataset
 
-**Faulty Output Dataset (FOD)** is a custom dataset, developed to evaluate fault detection metrics. The dataset is created by injecting permanent faults in the synaptic weights of the [Fast-SCNN](https://github.com/Tramac/Fast-SCNN-pytorch) network and processing images taken from the [Cityscapes](https://www.cityscapes-dataset.com/) validation partition, made of 500 labelled images. Faults are generated through Statistical Fault Injection (texttt{error} = 2%, confidence = 99%), selecting 8,439 faults at specific weights in the Fast-SCNN model, flipping the most significant bit in a randomly selected synaptic weight, thus significantly altering the parameter values due to the FP32 representation. From the 8439 × 500 faulty outputs, a total of random 68,001 image-fault pairs were selected.
+**Faulty Output Dataset (FOD)** is a custom dataset, developed to evaluate fault detection metrics. The dataset is created by injecting permanent faults in the synaptic weights of the [Fast-SCNN](https://github.com/Tramac/Fast-SCNN-pytorch) network and processing images taken from the [Cityscapes](https://www.cityscapes-dataset.com/) validation partition, made of 500 labelled images. Faults are generated through Statistical Fault Injection (error = 2%, confidence = 99%), selecting 8,439 faults at specific weights in the Fast-SCNN model, flipping the most significant bit in a randomly selected synaptic weight, thus significantly altering the parameter values due to the FP32 representation. From the 8439 × 500 faulty outputs, a total of random 68,001 image-fault pairs were selected.
 
 ## Dataset Examples
 
